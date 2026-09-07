@@ -330,7 +330,7 @@ Object.assign<typeof updateHooks_, { [key in SettingsNS.DeclaredUpdateHooks]: Se
 export const defaults_: Readonly<SettingsWithDefaults> & SafeObject = {
     __proto__: null as never,
     allBrowserUrls: false,
-    autoDarkMode: 2,
+    autoDarkMode: 1,
     autoReduceMotion: 2,
     clipSub: `p=^git@([^/:]+):=https://$1/=
 s@^https://(?:www\\.)?google\\.com(?:\\.[^/]+)?/url\\?(?:[^&#]+&)*?url=([^&#]+)@$1@,matched,decodecomp
