@@ -2,7 +2,7 @@ import { CurCVer_ } from "./store"
 import { fetchFile_ } from "./utils"
 import { browser_, Q_ } from "./browser"
 import type * as i18n_map from "../_locales/en/messages.json"
-import type * as i18n_dyn from "../i18n/zh/background.json"
+import type * as i18n_dyn from "../i18n/en/background.json"
 
 type ValidI18nFiles = "background" | "help_dialog"
 export type ExtNames = keyof typeof i18n_map

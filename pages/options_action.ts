@@ -7,7 +7,7 @@ import {
   type ExclusionBaseVirtualNode, setupSettingsCache_
 } from "./options_base"
 import { kPgReq, PgReq } from "../background/page_messages"
-import type * as i18n_action from "../i18n/zh/action.json"
+import type * as i18n_action from "../i18n/en/action.json"
 
 type CachedMatcher = ValidUrlMatchers | false
 let conf_: PgReq[kPgReq.actionInit][1]

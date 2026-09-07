@@ -14,7 +14,7 @@ type NoAliasInCNames<k extends kCName> =
 
 // eslint-disable-next-line no-var
 let html_: [string, string] | null = null
-let i18n_: Map<keyof typeof import("../i18n/zh/help_dialog.json"), string>
+let i18n_: Map<keyof typeof import("../i18n/en/help_dialog.json"), string>
 const descriptions_ = new Map<kCName, [/** description */ string, /** parameters */ string]>()
 
 const parseHTML = (template: string): [string, string] => {

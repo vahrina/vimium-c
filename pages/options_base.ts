@@ -3,7 +3,7 @@ import {
   onDicts_, curPagePath_, setupPageOs_
 } from "./async_bg"
 import { kPgReq } from "../background/page_messages"
-import type * as i18n_options from "../i18n/zh/options.json"
+import type * as i18n_options from "../i18n/en/options.json"
 
 export type AllowedOptions = SettingsNS.PersistentSettings
 export type PossibleOptionNames<T> = PossibleKeys<AllowedOptions, T>

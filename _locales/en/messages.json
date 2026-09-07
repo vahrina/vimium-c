@@ -8,9 +8,12 @@
   "userCustomized": { "message": "custom shortcut" },
   "name": { "message": "vimium c - all by keyboard" },
   "description": { "message":
-"a keyboard shortcut tool for keyboard-based page navigation and browser tab operations with an advanced omnibar and global shortcuts"
+    "a keyboard shortcut tool for keyboard-based page navigation and browser tab operations with an advanced omnibar and global shortcuts"
   },
-  "noactivestate": { "message": "as configured, here's no active state" },
+  "lang1": { "message": "" },
+  "i18n": { "message": "" },
+  "i18nAll": { "message": "" },
+  "noActiveState": { "message": "as configured, here's no active state" },
   "vblank": { "message": "" },
   "voptions": { "message": "" },
   "vshow": { "message": "" },
@@ -74,7 +77,7 @@
   "89": { "message": "event.target.remove()" },
   "90": { "message": "a,button,input,frame,iframe" },
   "91": { "message": "^url\\(\\s?['\"]?((?:\\\\['\"]|[^'\"])+?)['\"]?\\s?\\)" },
- "92": { "message": "(?:(?<=\\b|_)(?:b(?:utto|t)n|close|hate|like)|B(?:utto|t)n|Close)(?=$$|[-\\sA-Z_])" },
+  "92": { "message": "(?:(?<=\\b|_)(?:b(?:utto|t)n|close|hate|like)|B(?:utto|t)n|Close)(?=$$|[-\\sA-Z_])" },
   "93": { "message": "(?:(?:\\b|_)(?:b(?:utto|t)n|close|hate|like)|B(?:utto|t)n|Close)(?=$$|[-\\sA-Z_])" },
   "94": { "message": "^(?:button|checkbox|link|radio|tab)$$|^menuitem" },
   "95": { "message": "^[^\\w\\x80-\\uffff]+|[^!-~À-üЂ-џºء-ي]+" },
@@ -92,12 +95,10 @@
   "105": { "message": "(-ms-high-contrast:active)" },
   "106": { "message": "script,style,title,textarea" },
   "107": { "message": "\\.(?:avif|bmp|gif|icon?|jpe?g|a?png|svg|tiff?|webp)\\b" },
-  "108": { "message":
-"\\bgoogle##.g;bing.com##.b_algo;baidu.com##.c-container;mail.ru##.SnippetResultInfo-favicon"
-  },
+  "108": { "message": "\\bgoogle##.g;bing.com##.b_algo;baidu.com##.c-container;mail.ru##.SnippetResultInfo-favicon" },
   "109": { "message": "twitter.com##[href$$=\\/trends],[data-testid=app-bar-back]" },
   "110": { "message":
-"beforecopy beforecut beforeinput compositionend compositionstart compositionupdate contextmenu copy cut keypress mouseup paste selectionchange selectstart textInput "
+    "beforecopy beforecut beforeinput compositionend compositionstart compositionupdate contextmenu copy cut keypress mouseup paste selectionchange selectstart textInput "
   },
   "111": { "message": "vimium c uses the built-in vomnibar page because the preferred is too old." },
   "112": { "message": "some functions of vimium c may not work because %o is sandboxed at %o." },
@@ -107,15 +108,15 @@
   "116": { "message": "^(canvas|embed|i?frame|img|video|object)$" },
   "117": { "message": ".monaco-editor//textarea.monaco-mouse-cursor-text//" },
   "118": { "message": "weibo.com##.expand,.collapse;learn.microsoft.com##.tree-expander" },
-  "119": { "message": "Readonly text box is focused" },
+  "119": { "message": "readonly text box is focused" },
   "120": { "message":
-"#read-only-cursor-text-area,.monaco-mouse-cursor-text[aria-autocomplete=none],.Codemirror>div>textarea[readonly=''][style]"
+    "#read-only-cursor-text-area,.monaco-mouse-cursor-text[aria-autocomplete=none],.Codemirror>div>textarea[readonly=''][style]"
   },
   "121": { "message":
-"[aria-controls],[role=combobox],#kw.s_ipt,input[placeholder$$=搜索],input[type=search][name=q],input[role=searchbox],.monaco-inputbox>div>textarea[style]"
+    "[aria-controls],[role=combobox],#kw.s_ipt,input[placeholder$$=搜索],input[type=search][name=q],input[role=searchbox],.monaco-inputbox>div>textarea[style]"
   },
-  "122": { "message": "veuillez sélectionner un mot" },
-  "123": { "message": "veuillez sélectionner du texte" },
+  "122": { "message": "please select a word" },
+  "123": { "message": "please select some text" },
   "200": { "message": "http://www.w3.org/1999/xhtml" },
   "0": { "message": "open link in current tab" },
   "2": { "message": "open link in new tab" },

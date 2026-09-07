@@ -3,7 +3,7 @@ import {
   import2_, TransTy, isVApiReady_, post_, disconnect_, simulateClick_, ValidFetch, hasShift_, setupPageOs_, isRepeated_, prevent_
 } from "./async_bg"
 import { kPgReq } from "../background/page_messages"
-import type * as i18n_action from "../i18n/zh/action.json"
+import type * as i18n_action from "../i18n/en/action.json"
 
 interface VDataTy {
   full: string
