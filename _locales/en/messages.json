@@ -1,11 +1,11 @@
 {
-  "createtab_s": { "message": "create new tab" },
-  "goback_s": { "message": "go back in history" },
-  "goforward_s": { "message": "go forward in history" },
-  "previoustab_s": { "message": "go one tab left" },
-  "quicknext_s": { "message": "go one tab right" },
-  "reloadtab_s": { "message": "reload tab" },
-  "usercustomized": { "message": "custom shortcut" },
+  "createTab_s": { "message": "create new tab" },
+  "goBack_s": { "message": "go back in history" },
+  "goForward_s": { "message": "go forward in history" },
+  "previousTab_s": { "message": "go one tab left" },
+  "quickNext_s": { "message": "go one tab right" },
+  "reloadTab_s": { "message": "reload tab" },
+  "userCustomized": { "message": "custom shortcut" },
   "name": { "message": "vimium c - all by keyboard" },
   "description": { "message":
 "a keyboard shortcut tool for keyboard-based page navigation and browser tab operations with an advanced omnibar and global shortcuts"
@@ -14,10 +14,10 @@
   "vblank": { "message": "" },
   "voptions": { "message": "" },
   "vshow": { "message": "" },
-  "close": { "message": "" },
-  "toggle_dark": { "message": "" },
-  "search": { "message": "" },
-  "go": { "message": "" },
+  "Close": { "message": "" },
+  "Toggle_Dark": { "message": "" },
+  "Search": { "message": "" },
+  "Go": { "message": "" },
   "1": { "message": "$1" },
   "4": { "message": "the last element is unhovered" },
   "5": { "message": "no matching targets found" },
@@ -74,10 +74,10 @@
   "89": { "message": "event.target.remove()" },
   "90": { "message": "a,button,input,frame,iframe" },
   "91": { "message": "^url\\(\\s?['\"]?((?:\\\\['\"]|[^'\"])+?)['\"]?\\s?\\)" },
-  "92": { "message": "(?:(?<=\\b|_)(?:b(?:utto|t)n|close|hate|like)|b(?:utto|t)n|close)(?=$$|[-\\sa-z_])" },
-  "93": { "message": "(?:(?:\\b|_)(?:b(?:utto|t)n|close|hate|like)|b(?:utto|t)n|close)(?=$$|[-\\sa-z_])" },
+ "92": { "message": "(?:(?<=\\b|_)(?:b(?:utto|t)n|close|hate|like)|B(?:utto|t)n|Close)(?=$$|[-\\sA-Z_])" },
+  "93": { "message": "(?:(?:\\b|_)(?:b(?:utto|t)n|close|hate|like)|B(?:utto|t)n|Close)(?=$$|[-\\sA-Z_])" },
   "94": { "message": "^(?:button|checkbox|link|radio|tab)$$|^menuitem" },
-  "95": { "message": "^[^\\w\\x80-\\uffff]+|[^!-~à-üђ-џºء-ي]+" },
+  "95": { "message": "^[^\\w\\x80-\\uffff]+|[^!-~À-üЂ-џºء-ي]+" },
   "96": { "message": "[^0-9a-z_ß-üа-џºء-ي]+" },
   "97": { "message": "\\b(device-width|initial-scale)\\b" },
   "98": { "message": "0\\.01|/\\*!dpi\\*/[\\d.]+" },
@@ -85,19 +85,19 @@
   "100": { "message": "^void\\s*\\( ?0 ?\\)\\s*;?$$|^;?$$" },
   "101": { "message": "^http://(?!localhost[:/])" },
   "102": { "message":
-"^(new\\.|www\\.|)reddit\\.com$$###overlayscrollcontainer;^twitter\\.com$$##div.permalink-container div.permalink[role=main];^web\\.telegram\\.org$$##.messagelist"
+    "^(new\\.|www\\.|)reddit\\.com$$###overlayScrollContainer;^twitter\\.com$$##div.permalink-container div.permalink[role=main];^web\\.telegram\\.org$$##.MessageList"
   },
   "103": { "message": "(^|-)(button|a$$)" },
-  "104": { "message": "\\b(?:[cc]lose)(?:$$|[-\\sa-z_])" },
+  "104": { "message": "\\b(?:[Cc]lose)(?:$$|[-\\sA-Z_])" },
   "105": { "message": "(-ms-high-contrast:active)" },
   "106": { "message": "script,style,title,textarea" },
   "107": { "message": "\\.(?:avif|bmp|gif|icon?|jpe?g|a?png|svg|tiff?|webp)\\b" },
   "108": { "message":
-"\\bgoogle##.g;bing.com##.b_algo;baidu.com##.c-container;mail.ru##.snippetresultinfo-favicon"
+"\\bgoogle##.g;bing.com##.b_algo;baidu.com##.c-container;mail.ru##.SnippetResultInfo-favicon"
   },
   "109": { "message": "twitter.com##[href$$=\\/trends],[data-testid=app-bar-back]" },
   "110": { "message":
-"beforecopy beforecut beforeinput compositionend compositionstart compositionupdate contextmenu copy cut keypress mouseup paste selectionchange selectstart textinput "
+"beforecopy beforecut beforeinput compositionend compositionstart compositionupdate contextmenu copy cut keypress mouseup paste selectionchange selectstart textInput "
   },
   "111": { "message": "vimium c uses the built-in vomnibar page because the preferred is too old." },
   "112": { "message": "some functions of vimium c may not work because %o is sandboxed at %o." },
@@ -107,9 +107,9 @@
   "116": { "message": "^(canvas|embed|i?frame|img|video|object)$" },
   "117": { "message": ".monaco-editor//textarea.monaco-mouse-cursor-text//" },
   "118": { "message": "weibo.com##.expand,.collapse;learn.microsoft.com##.tree-expander" },
-  "119": { "message": "readonly text box is focused" },
+  "119": { "message": "Readonly text box is focused" },
   "120": { "message":
-"#read-only-cursor-text-area,.monaco-mouse-cursor-text[aria-autocomplete=none],.codemirror>div>textarea[readonly=''][style]"
+"#read-only-cursor-text-area,.monaco-mouse-cursor-text[aria-autocomplete=none],.Codemirror>div>textarea[readonly=''][style]"
   },
   "121": { "message":
 "[aria-controls],[role=combobox],#kw.s_ipt,input[placeholder$$=搜索],input[type=search][name=q],input[role=searchbox],.monaco-inputbox>div>textarea[style]"
