@@ -109,8 +109,7 @@ html.dark {
 }
 
 body {
-  font: 14px "Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB"
-    ,"Microsoft YaHei","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  font: monospace;
   margin: 0;
 }
 body.dialog-ui {
@@ -160,8 +159,7 @@ button, select {
   box-sizing: border-box;
   color: #444;
   color: var(--vc-button-color, #444);
-  font: 12px/1 "Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB"
-    ,"Microsoft YaHei","Heiti SC","WenQuanYi Micro Hei",sans-serif !important;
+  font: monospace;
   height: 24px;
   outline: none;
   padding: 0 10px;
@@ -245,8 +243,7 @@ select.font-fix {
 }
 
 pre, kbd, .code {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", "PingFang SC", "Hiragino Sans GB",
-    "Heiti SC", "WenQuanYi Micro Hei", monospace;
+  font-family: monospace;
 }
 pre, .help-block {
   margin: 5px;
@@ -573,8 +570,7 @@ label:active {
 .exclusionHeader {
   color: #444;
   display: inline-block;
-  font: 14px/16px "Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB"
-    ,"Microsoft YaHei","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  font: monospace;
   height: 16px;
   padding-left: 4px;
 }
