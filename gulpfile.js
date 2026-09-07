@@ -249,26 +249,8 @@ var Tasks = {
   "min/others": ["min/pages", "min/omni", "min/misc"],
   _manifest: function(cb) {
     const mv3 = !!getBuildItem("MV3")
-    const manifest_v2 = readJSON("./manifest.v2.json")
     var minVer = getBuildItem("MinCVer"), browser = getBuildItem("BTypes");
     minVer = minVer ? (minVer | 0) : 0;
-      if (mv3 && browser === BrowserType.Firefox) { manifest.background = manifest_v2.background }
-      for (const key of Object.keys(manifest_v2)) {
-          const val = manifest_v2[key]
-          if (mv3) { /* empty */ }
-          else if (key.endsWith("[]") && val instanceof Array) {
-            const old = manifest[key.slice(0, -2)]
-            for (const item of val) {
-              if (item[0] === "-") {
-                let found = old.indexOf(item.slice(1)); found >= 0 && old.splice(found, 1)
-              } else {
-                old.includes(item) || old.push(item)
-              }
-            }
-          } else {
-            val != null ? (manifest[key] = val) : delete manifest[key]
-          }
-      }
       for (const key of ["content_scripts"]) {
           manifest[key].splice(1, manifest[key].length - 1)
           if (!mv3) {
