@@ -1,6 +1,6 @@
-<a name="readme"></a><h2 align="center">
+<h2 align="center">
   <img src="icons/icon128.png" width="32" height="32" alt="" />
-  <span style="color: #2f508e;">Vim</span>ium <span style="color: #a55e18;">C</span> - All by Keyboard
+  <span>vimium c - all by keyboard
 </h2>
 
 [![Version](https://img.shields.io/github/v/release/gdh1995/vimium-c?logo=GitHub&label=gdh1995%2Fvimium-c&color=critical
@@ -35,40 +35,22 @@
 [Chrome Web Store](https://chrome.google.com/webstore/detail/vimium-c-all-by-keyboard/hfjbmagddngcpeloejdejnfgbamkjaeg
   )**
 
-A <span style="color: #a55e18;">C</span>ustomized
-  [<span style="color: #2f508e;">Vim</span>ium](https://github.com/philc/vimium)
-  (to click web page content and manipulate browser windows using only keyboard)
-  having [**c**ontextual mapping](https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites),
+A Customized
+[Vimium](https://github.com/philc/vimium) Browser Extension,
+having [**c**ontextual mapping](https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites),
   [global short**c**uts](https://github.com/gdh1995/vimium-c/wiki/Trigger-commands-in-an-input-box#user-content-shortcut),
   [**c**ommand sequences](https://github.com/gdh1995/vimium-c/wiki/Auto-run-a-tree-of-commands),
   **C**hinese support
   and [inje**c**tion](https://github.com/gdh1995/vimium-c/wiki/Inject-into-other-extensions) functionality,
   in <span style="color: #a55e18;">**C**</span>-style code for qui**c**ker action and less resource **c**ost.
 
-[<span style="color: #2f508e;">Vim</span>ium](https://github.com/philc/vimium) 的一款<span
-  style="color: #a55e18;">修改版</span>（可以用键盘点击网页内容、操作浏览器窗口），添加了完整的<span
-  style="color: #a55e18;">中文</span>支持、[分场景映射](https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites
-  )、[全局快捷键](https://github.com/gdh1995/vimium-c/wiki/Trigger-commands-in-an-input-box#user-content-shortcut
-  )和[命令序列](https://github.com/gdh1995/vimium-c/wiki/Auto-run-a-tree-of-commands
-  )功能，还能运行在某些接受 Vimium C
-  的[扩展程序的私有页面](https://github.com/gdh1995/vimium-c/wiki/Inject-into-other-extensions)里，并且对CPU和内存资源的<span
-  style="color: #a55e18;">消耗很低</span>。
-
-[阅读中文介绍 (description in Chinese) 。](README-zh.md)
-
 This project is mainly developed and maintained by [gdh1995](https://github.com/gdh1995) (Gong Dahan),
 and open-sourced under the [Apache-2.0 license](LICENSE.txt).
-
-本项目主要由 [gdh1995](https://github.com/gdh1995)（宫大汉）开发并维护，且以 [Apache-2.0 许可协议](LICENSE.txt) 开源。
 
 It (the released version) supports the new Microsoft Edge, Google Chrome and other Chromium-based browsers
   whose core versions are >= 102, and has a perfect support for a recent Firefox (since version 101.0, desktop).
 It can even run on Microsoft Edge (EdgeHTML), though there're still some errors.
 If re-compiled from the source code, Vimium C is able to support Chromium 32~108 and Firefox 63~100.
-
-它支持内核版本不低于 102 的新版 Microsoft Edge、Google Chrome 和其它以 Chromium 为内核的浏览器，
-同时也能完美运行在近些年发布的 Firefox 101（桌面版）和更高版本上，甚至在 Edge (EdgeHTML 内核) 上也能正常执行大部分命令。
-如果从源码重新编译，Vimum C 还可以支持 Chromium 32~108 和 Firefox 63~100。
 
 ![Usage Demo of Vimium C](https://gdh1995.cn/vimium-c/demo.gif)
 
@@ -77,10 +59,7 @@ This project is hosted on https://github.com/gdh1995/vimium-c and https://gitee.
 Some old code of Vimium C was under the MIT license,
 and you may get it in https://github.com/gdh1995/vimium-c/tree/MIT-licensed-v1 .
 
-Vimium C 的部分旧代码以 MIT 许可协议开源，可以前往 https://github.com/gdh1995/vimium-c/tree/MIT-licensed-v1 获得源码。
-
 An old name of this project is "Vimium++", which has been given up on 2018-08-21.
-
 
 # Keyboard Bindings
 _This section is modified from [philc/vimium 's](https://github.com/philc/vimium#keyboard-bindings)._
@@ -236,9 +215,8 @@ Here're some advanced usages which are different with philc/vimium:
 
 # Project Introduction
 
-__<span style="color: #2f508e;">Vim</span>ium <span style="color: #a55e18;">C</span>:__
+**Vimium C**
 
-* [中文介绍 (description in Chinese)](README-zh.md)
 * a web extension for Firefox, Microsoft Edge and Google Chrome that provides keyboard-based navigation and control
     of the web, in the spirit of the Vim editor.
 * add some powerful functions and provide more configurable details and convenience.
@@ -267,7 +245,7 @@ __Other extensions supporting Vimium C:__
     [Chrome Web Store](
       https://chrome.google.com/webstore/detail/shortcut-forwarding-tool/clnalilglegcjmlgenoppklmfppddien)
   * project home: [vimium-c-helpers/shortcuts](https://github.com/gdh1995/vimium-c-helpers/tree/master/shortcuts#readme)
-* Modified Weidu New Tab (微度新标签页修改版)
+* Modified Weidu New Tab
   * a modified and lite version of [www.weidunewtab.com](http://www.weidunewtab.com/) (or
       [www.newtabplus.com](http://www.newtabplus.com/) ), with Chinese translation only
   * it does not take over browser's new tab settings; if needed then [NewTab Adapter](
