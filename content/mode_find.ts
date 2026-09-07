@@ -87,7 +87,6 @@ let styleInHUD: HTMLStyleElement | null = null
 let onUnexpectedBlur: ((this: unknown, event?: Event) => void) | null = null
 let doesCheckAlive: BOOL = 0
 let highlighting: (() => void) | undefined | 0
-let isSmall: boolean
 let postLock: Element | null = null
 let cachedInnerText: { /** innerText */ i: string, /** timestamp */ t: number, n: boolean } | null | undefined
 let deactivate: (i: FindAction) => void
@@ -218,15 +217,10 @@ export const activate = (options: CmdOptions[kFgCmd.findMode]): void => {
     }
   }
   const showCount = (changed?: BOOL): void => {
-    let count = matchCount
     if (changed) {
         countEl.dataset.vimium = suppressOnInput_ ? VTr(kTip.paused)
-            : !parsedQuery_ ? "" : VTr(count > 1 ? kTip.nMatches : count ? kTip.oneMatch
-            : hasResults ? kTip.someMatches : kTip.noMatches, [count])
-    }
-    count = (dimSize_(input_, kDim.scrollW) + countEl.offsetWidth + 35) & ~31
-    if (!isSmall || count > 151) {
-      outerBox_.style.width = ((isSmall = count < 152) ? 0 as number | string as string : count + "px")
+            : !parsedQuery_ ? "" : VTr(matchCount > 1 ? kTip.nMatches : matchCount ? kTip.oneMatch
+            : hasResults ? kTip.someMatches : kTip.noMatches, [matchCount])
     }
   }
   const scrollTo_ = (action: 0 | 1 | 2 | 3 | 9): void => { // up, left, right, down
@@ -308,7 +302,7 @@ export const activate = (options: CmdOptions[kFgCmd.findMode]): void => {
     lastInputTime_ = isActive = 0
     i === FindAction.ExitNoAnyFocus ? hookSel(1) : focus()
     coords && scrollToMark(coords)
-    hasResults = isSmall = notEmpty = wholeWord = false
+    hasResults = notEmpty = wholeWord = false
     wrapAround = true
     removeHandler_(kHandler.find)
     outerBox_ && removeEl_s(outerBox_)
@@ -418,7 +412,7 @@ export const activate = (options: CmdOptions[kFgCmd.findMode]): void => {
     const outerBox = outerBox_ = createElement_(OnChrome
         && Build.MinCVer < BrowserVer.MinForcedColorsMode ? getBoxTagName_old_cr() : "div"),
     st = outerBox.style
-    st.width = "0";
+    st.width = "100%"
     setDisplaying_s(outerBox)
     if (wdZoom_ !== 1) { st.zoom = "" + 1 / wdZoom_ }
     setClassName_s(outerBox, "R UI HUD" + fgCache.d)
