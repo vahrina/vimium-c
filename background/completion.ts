@@ -323,7 +323,7 @@ historyEngine = {
       const u = e.u, o = new Suggestion("history", u, UrlDecoder_.decodeURL_(u, u), e.title_ || "",
           get2ndArg, (99 - i) / 100), sessionId: any = e.sessionId_
       o.visit = e.visit_
-      sessionId && (o.s = sessionId, o.label = '<span class="undo">&#8630;</span>' + e.label_!)
+      sessionId && (o.s = sessionId, o.label = '')
       arr[i] = o;
     }
     ; (historyArr as BrowserUrlItem[]).forEach(MakeSuggestion_)
