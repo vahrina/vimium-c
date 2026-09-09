@@ -7,18 +7,19 @@
   "dependencies": {
     "pngjs": "^7.0.0",
     "terser": "^5.19.0",
-    "typescript": "^4.9.1"
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
     "clean-css": "^5.3.2",
+    "fancy-log": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.3",
-    "gulp-concat": "*",
-    "gulp-newer": "*",
+    "gulp-concat": "^2.6.1",
+    "gulp-newer": "^1.4.0",
     "gulp-print": "^5.0.2",
-    "gulp-some": "*",
+    "gulp-some": "^1.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
     "rimraf": "^5.0.1",
     "rollup": "^3.26.2",
     "seedrandom": "^3.0.5"
@@ -42,11 +43,7 @@
     "firefox",
     "edge"
   ],
-  "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
-    "eslint": "^7.29.0"
-  },
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/gdh1995/vimium-c.git"
@@ -57,10 +54,8 @@
     "dev": "node scripts/tsc.js --watch",
     "all": "gulp tsc",
     "prepare": "node scripts/icons-to-blob.js -q",
-    "lint": "node ./scripts/eslint.js",
-    "eslint": "node ./scripts/eslint.js",
     "build": "gulp build",
-    "dist": "npm run chrome-latest",
+    "dist": "npm run chrome",
     "rebuild": "gulp rebuild",
     "edge": "bash -c \"BUILD_BTypes=1 BUILD_MinCVer=${BUILD_MinCVer:-102}   BUILD_NeedCommit=1 BUILD_EdgeC=1 gulp dist && IN_DIST=1 BUILD_EdgeC=1 ./scripts/make.sh\"",
     "chrome": "bash -c \"BUILD_BTypes=1 BUILD_MinCVer=${BUILD_MinCVer:-102}   BUILD_NeedCommit=1 gulp dist && IN_DIST=1 ./scripts/make.sh\"",
@@ -81,6 +76,5 @@
     "local": "gulp local",
     "start": "gulp local",
     "test": "gulp test"
-  },
-  "version": "2.0.0"
+  }
 }

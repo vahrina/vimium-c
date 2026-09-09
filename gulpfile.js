@@ -104,7 +104,7 @@ var Tasks = {
     const arr = ["front/*.html", "pages/*.html", "!*/vomnibar.html"];
     if (!getBuildItem("MV3")) { arr.push("!*/offscreen.html") }
     if (!getBuildItem("NDEBUG")) { return copyByPath(arr) }
-    return copyByPath(arr, file => { ToBuffer(file, require("html-minifier").minify(ToString(file), {
+    return copyByPath(arr, async file => { ToBuffer(file, await require("html-minifier-terser").minify(ToString(file), {
       collapseWhitespace: true,
       minifyCSS: true,
     })) })
@@ -453,8 +453,6 @@ var Tasks = {
     done();
   }],
   eslint: function (done) {
-    process.argv = process.argv.slice(0, 2);
-    require("./scripts/eslint");
     done();
   },
   "size/content": function (done) {
