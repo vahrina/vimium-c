@@ -22,3 +22,4 @@ node_modules/
 icons/*.bin
 .env*
 /dist-*
+package-lock.json
